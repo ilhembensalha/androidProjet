@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:ignore="HardcodedText">
+    <item
+        android:id="@+id/home"
+        android:title="Accueil"
+        android:icon="@drawable/h"/>
+
+    <item
+        android:id="@+id/profile"
+        android:title="Mon Profile"
+      android:icon="@drawable/p"
+
+        />
+    <item
+        android:id="@+id/mesannonce"
+        android:title="Mes Annonce"
+        android:icon="@drawable/annoncy"
+
+        />
+
+    <item
+        android:id="@+id/nav_logout"
+        android:title="Déconnexion"
+        android:icon="@drawable/l"
+
+        />
+
+    <item
+       android:title="autre"
+        >
+        <menu>
+            <item
+                android:id="@+id/about"
+                android:title="About Us"
+                android:icon="@drawable/about"/>
+            <item
+                android:id="@+id/nav_settings"
+                android:title="Réglages"
+                android:icon="@drawable/s"/>
+        </menu>
+    </item>
+
+</menu>

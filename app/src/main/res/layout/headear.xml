@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="20dp">
+    <com.makeramen.roundedimageview.RoundedImageView
+        android:id="@+id/imageprofilemenu"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:riv_oval="true"
+        android:src="@drawable/ic_user"
+        />
+<View
+    android:id="@+id/VIEW"
+    android:layout_width="1dp"
+    android:layout_height="1dp"
+    app:layout_constraintStart_toStartOf="@id/imageprofilemenu"
+    app:layout_constraintTop_toTopOf="@id/imageprofilemenu"
+    app:layout_constraintBottom_toBottomOf="@id/imageprofilemenu"
+    app:layout_constraintEnd_toEndOf="@id/imageprofilemenu"/>
+    <TextView
+        android:id="@+id/nometprenom"
+        android:layout_width="0sp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toTopOf="@id/VIEW"
+        app:layout_constraintStart_toEndOf="@id/imageprofilemenu"
+        android:textStyle="bold"
+        android:textSize="16dp"/>
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        tools:ignore="MissingConstraints" />
+    <TextView
+        android:id="@+id/mail"
+        android:layout_width="0sp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:textColor="@color/black"
+        app:layout_constraintTop_toBottomOf="@id/nometprenom"
+        app:layout_constraintStart_toEndOf="@id/imageprofilemenu"
+        android:textSize="10dp"/>
+    <TextView
+        android:id="@+id/line"
+        style="?android:attr/listSeparatorTextViewStyle"
+        android:paddingTop="5dip"
+        android:layout_marginTop="10dp"
+        android:gravity="center_horizontal"
+        android:layout_below="@+id/mail"
+        android:layout_width="match_parent" android:layout_height="1dp" android:background="#000"
+        app:layout_constraintTop_toBottomOf="@id/imageprofilemenu"
+
+        />
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
